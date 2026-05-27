@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz para programadores</title>
     <meta name="description" content="Um quiz interativo para testar seus conhecimentos em programação">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Quiz interativo para programadores</h1>
@@ -16,9 +19,11 @@
         <!-- Introdução -->
         <section>
             <h2>Sobre esse Quiz</h2>
-            <p>Este <strong>Quiz</strong> foi desenvolvido para testar seus conhecimentos em programação como <em>linguagem de programação</em>, conceitos básicos e mais.</p>
+            <p>Este <strong>Quiz</strong> foi desenvolvido para testar seus conhecimentos em programação como
+                <em>linguagem de programação</em>, conceitos básicos e mais.</p>
             <p>Você encontrará diferentes tipos de perguntas. <br> Desafie-se com esse Quiz!</p>
-            <p>O <abbr title="Hypertext Markup Language">HTML</abbr> e o <abbr title="Cascading Style Sheets">CSS</abbr> são fundamentais para a web.</p>
+            <p>O <abbr title="Hypertext Markup Language">HTML</abbr> e o <abbr title="Cascading Style Sheets">CSS</abbr>
+                são fundamentais para a web.</p>
         </section>
 
         <!-- Pergunta 1 - Múltipla Escolha -->
@@ -63,11 +68,19 @@
         <!-- Pergunta 5 - Checkbox -->
         <section>
             <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+
             <form>
                 <input type="checkbox" name="pergunta5" id="p5a" value="JavaScript">
                 <label for="p5a">JavaScript</label><br>
-                <input type="checkbox" name="pergunta5" id="p5b" value="Java">
-                <label for="p5b">Java</label>
+
+                <input type="checkbox" name="pergunta5" id="p5b" value="HTML">
+                <label for="p5b">HTML</label><br>
+
+                <input type="checkbox" name="pergunta5" id="p5c" value="Java">
+                <label for="p5c">Java</label><br>
+
+                <input type="checkbox" name="pergunta5" id="p5d" value="CSS">
+                <label for="p5d">CSS</label>
             </form>
         </section>
 
@@ -114,10 +127,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>0 a 2</td><td>Não desista!</td></tr>
-                    <tr><td>3 a 4</td><td>Você ainda precisa melhorar.</td></tr>
-                    <tr><td>5 a 7</td><td>Bom! Seu conhecimento é satisfatório.</td></tr>
-                    <tr><td>8</td><td>Perfeito!</td></tr>
+                    <tr>
+                        <td>0 a 2</td>
+                        <td>Não desista!</td>
+                    </tr>
+                    <tr>
+                        <td>3 a 4</td>
+                        <td>Você ainda precisa melhorar.</td>
+                    </tr>
+                    <tr>
+                        <td>5 a 7</td>
+                        <td>Bom! Seu conhecimento é satisfatório.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Perfeito!</td>
+                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
@@ -156,7 +181,8 @@
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email"><br>
                     <label for="comentarios">Comentários:</label><br>
-                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea><br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50"
+                        placeholder="Digite seus comentários aqui"></textarea><br>
                     <button type="button" onclick="alert('Feedback enviado')">Envie o feedback</button>
                 </fieldset>
             </form>
@@ -164,8 +190,8 @@
     </main>
 
     <footer>
-        <p>Quiz de Programadores &copy; Todos os direitos reservados.</p>
-        <p>Para conhecer mais sobre mim, <a href="sobremim.html" target="_blank">clique aqui</a>.</p>
+        <p class="paragrafo-footer">Quiz de Programadores &copy; Todos os direitos reservados.</p>
+        <p class="paragrafo-footer">Para conhecer mais sobre mim, <a href="sobremim.html" target="_blank">clique aqui</a>.</p>
     </footer>
 </body>
 </html>
